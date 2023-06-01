@@ -10,3 +10,4 @@ KLK esto es una modificación de un fichero, jijiji
 =======
 Aloha
 >>>>>>> f3cee25 (he hecho varios cambios en el fichero)
+KLK, dime a b! 
