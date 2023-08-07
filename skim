@@ -1,0 +1,28 @@
+from skimpy import skim
+import pandas as pd
+
+
+
+
+url_wine = 'https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data'
+
+
+column_names = ['class', 'alcohol', 'malic_acid', 'ash', 'alcalinity_of_ash',
+                'magnesium', 'total_phenols', 'flavanoids', 'nonflavanoid_phenols',
+                'proanthocyanins', 'color_intensity', 'hue', 'od280_od315_of_diluted_wines',
+                'proline']
+
+
+df_wine = pd.read_csv(url_wine, header=None, names=column_names)
+
+
+print(df_wine.head())
+print(df_wine.info())
+print(df_wine.describe())
+
+"""
+dtale_app.USE_COLAB = True
+d = dtale.show(df_wine, host='localhost', open_browser=True)
+"""
+
+skim(df_wine)
